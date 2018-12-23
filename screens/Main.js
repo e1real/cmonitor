@@ -5,13 +5,11 @@ import Settings from "./screens/Settings";
 
 const AppNavigator = createStackNavigator({
    Home: HomeScreen,
-    Details: Settings
-
-  // Home: {
-  //   screen: HomeScreen
-  // }
-}, {
+   Details: Settings
+  }, 
+  {
       initialRouteName: "Home"
-});
+  }
+);
 
 export default createAppContainer(AppNavigator);
